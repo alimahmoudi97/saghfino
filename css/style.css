@@ -562,6 +562,10 @@ body {
   overflow: auto;
 }
 
+.news__cards::-webkit-scrollbar {
+  color: #00ba88;
+}
+
 .news__card {
   display: flex;
   flex-direction: column;

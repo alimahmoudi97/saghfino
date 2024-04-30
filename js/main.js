@@ -18,6 +18,7 @@ drawerBtnClose.addEventListener("click", toggleBtn);
 
 const loginClosBtn = document.querySelector(".login__close");
 const loginHeaderBtn = document.getElementById("header-btn-login");
+const drawerBtnLogin = document.getElementById("drawer-nav__item-login");
 const modal = document.querySelector(".modal");
 
 function toggleLoginBtn(e) {
@@ -27,3 +28,4 @@ function toggleLoginBtn(e) {
 
 loginClosBtn.addEventListener("click", toggleLoginBtn);
 loginHeaderBtn.addEventListener("click", toggleLoginBtn);
+drawerBtnLogin.addEventListener("click", toggleLoginBtn);

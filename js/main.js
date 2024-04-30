@@ -13,3 +13,17 @@ function toggleBtn(e) {
 
 toggler.addEventListener("click", toggleBtn);
 drawerBtnClose.addEventListener("click", toggleBtn);
+
+// modal
+
+const loginClosBtn = document.querySelector(".login__close");
+const loginHeaderBtn = document.getElementById("header-btn-login");
+const modal = document.querySelector(".modal");
+
+function toggleLoginBtn(e) {
+  modal.classList.toggle("hidden");
+  body.classList.toggle("overflow-hidden");
+}
+
+loginClosBtn.addEventListener("click", toggleLoginBtn);
+loginHeaderBtn.addEventListener("click", toggleLoginBtn);

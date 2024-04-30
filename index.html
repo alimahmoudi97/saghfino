@@ -33,7 +33,10 @@
           <li class="nav__item"><a href="#">اخبار روز</a></li>
         </ul>
         <div class="header__buttons">
-          <button class="btn secondary--stroke btn--without-border">
+          <button
+            class="btn secondary--stroke btn--without-border"
+            id="header-btn-login"
+          >
             ورود
           </button>
           <button class="btn primary--stroke">ثبت آگهی</button>
@@ -395,6 +398,30 @@
         <img src="assets/images/illustarion_footer_image.svg" alt="" />
       </div>
     </footer>
+    <section class="modal hidden" id="modal">
+      <div class="modal__backdrop">
+        <div class="modal__box">
+          <div class="login">
+            <span class="login__close">❌</span>
+            <img src="./assets/images/Logologo.svg" />
+            <h2 class="login__header">ورود/ثبت نام</h2>
+            <p>لطفا برای ورود یا ثبت نام شماره موبایل خود را وارد کنید</p>
+            <input class="login__input-phone" type="tel" />
+            <div class="login__rules">
+              <input
+                class="login__checkbox"
+                type="checkbox"
+                id="login__checkbox"
+              />
+              <label for="login__checkbox"
+                >با قوانین <span>سقفینو</span> موافق هستم</label
+              >
+            </div>
+            <button class="btn btn--primary btn--block">ورود</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>
